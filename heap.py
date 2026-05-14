@@ -77,7 +77,7 @@ st.markdown("""
 
 st.markdown("<h2 style='text-align: center;'> HEAP SORT</h2>", unsafe_allow_html=True)
 
-input_str = st.text_input("Nhập dãy số:", "29 40 25 70 27 12 45 19 8 10")
+input_str = st.text_input("Nhập dãy số: (Cách nhau bởi dấu cách)", "29 40 25 70 27 12 45 19 8 10")
 
 if st.button("GIẢI"):
     data = [int(x) for x in input_str.split()]
