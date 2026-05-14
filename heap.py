@@ -50,7 +50,7 @@ def solve_heap_sort(arr):
     return all_steps
 
 # --- GIAO DIỆN STREAMLIT ---
-st.set_page_config(page_title="Heap Sort Chuẩn Tiền Giang", layout="wide")
+st.set_page_config(page_title="Heap Sort ", layout="wide")
 
 # CSS MỚI: Tạo lưới tự thích ứng (Grid Layout) mà không dùng st.columns
 st.markdown("""
@@ -75,11 +75,11 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown("<h2 style='text-align: center;'>ĐÁP ÁN CHI TIẾT HEAP SORT</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'> HEAP SORT</h2>", unsafe_allow_html=True)
 
 input_str = st.text_input("Nhập dãy số:", "29 40 25 70 27 12 45 19 8 10")
 
-if st.button("XEM ĐÁP ÁN"):
+if st.button("GIẢI"):
     data = [int(x) for x in input_str.split()]
     steps = solve_heap_sort(data)
     
