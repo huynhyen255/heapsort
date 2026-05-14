@@ -89,12 +89,12 @@ def heap_sort_with_steps(arr):
 
 # GIAO DIỆN STREAMLIT
 st.set_page_config(page_title="DS&A Heap Sort Solver", layout="centered")
-st.title("Trường Đại học Tiền Giang")
-st.subheader("Khoa Kỹ thuật Công nghệ - Đáp án Heap Sort")
+st.title("HEAP SORT")
+st.subheader("Cách giải Heap Sort")
 
 input_str = st.text_input("Nhập mảng số nguyên (cách nhau bởi dấu cách):", "29 40 25 70 27 12 45 19 8 10")
 
-if st.button("Xử lý giống đề thi"):
+if st.button("Giải"):
     arr = [int(x) for x in input_str.split()]
     all_steps = heap_sort_with_steps(arr)
     
